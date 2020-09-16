@@ -6,9 +6,9 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,12 +19,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - run: echo "::set-env name=FILELIST::$(printf '%s ' *.md)"
       - uses: docker://pandoc/latex:2.9
         with:
-          args: --toc --output=output/result.pdf ${{env.FILELIST}}
+          args: --template eisvogel --listings --output=output/result.pdf ${{env.FILELIST}}
       - uses: actions/upload-artifact@master
         with:
           name: output
