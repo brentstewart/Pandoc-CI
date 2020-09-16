@@ -10,7 +10,7 @@ $if(beamer)$
 $if(background-image)$
 \usebackgroundtemplate{%
 \includegraphics[width=\paperwidth]{$background-image$}%
-}
+} 
 $endif$
 \usepackage{pgfpages}
 \setbeamertemplate{caption}[numbered]

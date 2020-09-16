@@ -1,9 +1,4 @@
----
-title: "Chapter 7"
-author: [Brent Stewart]
-date: "2020-09-16"
-keywords: [Markdown, Example]
----
+# Chapter 7
 
 ## The standard Lorem Ipsum passage, used since the 1500s
 

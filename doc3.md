@@ -1,10 +1,3 @@
----
-title: "Chapter 3"
-author: [Brent D. Stewart]
-date: "2020-09-16"
-keywords: [Markdown, Example]
----
-
 # Chapter 3
 
 This is _a_ test **Markdown** document.
