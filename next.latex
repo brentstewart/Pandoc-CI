@@ -360,8 +360,7 @@ $endif$
 
 $for(include-before)$
 $include-before$
-\usepackage{sectsty}
-\sectionfont{\clearpage}
+\newpage
 
 $endfor$
 $if(toc)$
@@ -392,7 +391,7 @@ $if(lof)$
 \listoffigures
 $endif$
 $body$
-
+\newpage
 $if(natbib)$
 $if(bibliography)$
 $if(biblio-title)$
