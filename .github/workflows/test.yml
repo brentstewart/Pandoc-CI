@@ -24,7 +24,7 @@ jobs:
       - run: echo "::set-env name=FILELIST::$(printf '%s ' *.md)"
       - uses: docker://pandoc/latex:2.9
         with:
-          args: --template eisvogel --listings --output=output/result.pdf ${{env.FILELIST}}
+          args: --toc --output=output/result.pdf ${{env.FILELIST}}
       - uses: actions/upload-artifact@master
         with:
           name: output
