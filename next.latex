@@ -360,6 +360,8 @@ $endif$
 
 $for(include-before)$
 $include-before$
+\usepackage{sectsty}
+\sectionfont{\clearpage}
 
 $endfor$
 $if(toc)$
