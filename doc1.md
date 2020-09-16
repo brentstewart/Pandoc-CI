@@ -1,3 +1,9 @@
+---
+title: "Chapter 1"
+author: [Brent Stewart]
+date: "2020-09-16"
+keywords: [Markdown, Example]
+---
 # Chapter 1
 This is _a_ test __Markdown__ document.
 
