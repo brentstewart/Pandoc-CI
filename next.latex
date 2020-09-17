@@ -12,6 +12,8 @@ $if(background-image)$
 \includegraphics[width=\paperwidth]{$background-image$}%
 } 
 $endif$
+
+
 \usepackage{pgfpages}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{caption label separator}{: }

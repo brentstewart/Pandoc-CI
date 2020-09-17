@@ -24,7 +24,7 @@ jobs:
       - run: echo "::set-env name=FILELIST::$(printf '%s ' d*.md)"
       - uses: docker://pandoc/latex:2.9
         with:
-          args: --template next.latex --include-before-body cover.tex --include-in-header break.tex --toc --output=output/result.pdf ${{env.FILELIST}}
+          args: --template eisvogel.tex --o output/result.pdf ${{env.FILELIST}}
       - uses: actions/upload-artifact@master
         with:
           name: output.zip
