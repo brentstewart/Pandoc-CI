@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Thu 2020-09-17 11:20:51 EDT; 48s ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 414599 (dockerd)
+      Tasks: 12
+     Memory: 39.2M
+     CGroup: /system.slice/docker.service
+             └─414599 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Sep 17 11:20:51 MintyTwenty dockerd[414599]: time="2020-09-17T11:20:51.399693616-04:00" level=warning msg="Your kernel does not support cgroup rt runtime"
+Sep 17 11:20:51 MintyTwenty dockerd[414599]: time="2020-09-17T11:20:51.399699158-04:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+Sep 17 11:20:51 MintyTwenty dockerd[414599]: time="2020-09-17T11:20:51.399707599-04:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+Sep 17 11:20:51 MintyTwenty dockerd[414599]: time="2020-09-17T11:20:51.399856630-04:00" level=info msg="Loading containers: start."
+Sep 17 11:20:51 MintyTwenty dockerd[414599]: time="2020-09-17T11:20:51.463235390-04:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Sep 17 11:20:51 MintyTwenty dockerd[414599]: time="2020-09-17T11:20:51.517604435-04:00" level=info msg="Loading containers: done."
+Sep 17 11:20:51 MintyTwenty dockerd[414599]: time="2020-09-17T11:20:51.558411664-04:00" level=info msg="Docker daemon" commit=48a66213fe graphdriver(s)=overlay2 version=19.03.12
+Sep 17 11:20:51 MintyTwenty dockerd[414599]: time="2020-09-17T11:20:51.558522585-04:00" level=info msg="Daemon has completed initialization"
+Sep 17 11:20:51 MintyTwenty dockerd[414599]: time="2020-09-17T11:20:51.586322407-04:00" level=info msg="API listen on /run/docker.sock"
+Sep 17 11:20:51 MintyTwenty systemd[1]: Started Docker Application Container Engine.
