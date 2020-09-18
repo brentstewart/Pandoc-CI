@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: echo "::set-env name=FILELIST::$(printf '%s ' d*.md)"
       - run: docker login -u brentstewart -p enyirjisViccijdunAns
-      - uses: docker://brentstewart/pandoc-texlive:latest
+      - uses: docker://brentstewart/pandoc-texlive:1.0
         with:
           args: --template eisvogel.tex --o output/result.pdf ${{env.FILELIST}}
       - uses: actions/upload-artifact@master
