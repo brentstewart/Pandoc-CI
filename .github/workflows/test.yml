@@ -22,6 +22,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - run: echo "::set-env name=FILELIST::$(printf '%s ' d*.md)"
+      - run: docker login -u brentstewart -p enyirjisViccijdunAns
       - uses: docker://brentstewart/pandoc-texlive:latest
         with:
           args: --template eisvogel.tex --o output/result.pdf ${{env.FILELIST}}
